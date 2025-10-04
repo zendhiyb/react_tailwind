@@ -13,7 +13,8 @@ export const Navbar = () => {
           <a href="#" className="cursor-pointer hover:text-gray-400">Project</a>
           <a href="#" className="cursor-pointer hover:text-gray-400">Testimonial</a>
         </ul>
-        <button className="hiddin md:block bg-white px-8 py-2 rounded-full">Sign up</button>
+        <button className="hidden md:block bg-white px-8 py-2 rounded-full">Sign up</button>
+        <img src={assets.menu_icon} alt="" className="md:hidden w-7" />
       </div>
     </div>
     </>
