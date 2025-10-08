@@ -16,6 +16,15 @@ export const Navbar = () => {
         <button className="hidden md:block bg-white px-8 py-2 rounded-full">Sign up</button>
         <img src={assets.menu_icon} alt="" className="md:hidden w-7" />
       </div>
+      {/* MOBILE MENU */}
+      <div className="">
+        <ul>
+          <a href="#Header" className="px-4 py2 rounded-full inline-block">Home</a>
+          <a href="#Header" className="px-4 py2 rounded-full inline-block">About</a>
+          <a href="#Header" className="px-4 py2 rounded-full inline-block">Project</a>
+          <a href="#Header" className="px-4 py2 rounded-full inline-block">Testimonial</a>
+        </ul>
+      </div>
     </div>
     </>
   )
