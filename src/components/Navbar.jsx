@@ -2,6 +2,7 @@ import React from 'react'
 import {assets} from '../assets/assets'
 
 export const Navbar = () => {
+  const [mobileMenu, setMobileMenu] = useState(false)
   return (
     <>
     <div className="absolute top-0 left-0 w-full z-10">
@@ -17,8 +18,11 @@ export const Navbar = () => {
         <img src={assets.menu_icon} alt="" className="md:hidden w-7" />
       </div>
       {/* MOBILE MENU */}
-      <div className="">
-        <ul>
+      <div className={`md:hidden ${mobileMenu ? 'fixed w-full' : 'h-0 w-0'} right-0 top-0 bottom-0 overflow-medium bg-white transition-all`}>
+        <div className="flex justify-end p-6 cursor-pointer">
+          <img src="{assets.cross_icon}" className="w-6" alt="" />
+        </div>
+        <ul className="flex flex-col items-center gap-2 mt-5 px-5 text-lg font-medium">
           <a href="#Header" className="px-4 py2 rounded-full inline-block">Home</a>
           <a href="#Header" className="px-4 py2 rounded-full inline-block">About</a>
           <a href="#Header" className="px-4 py2 rounded-full inline-block">Project</a>
