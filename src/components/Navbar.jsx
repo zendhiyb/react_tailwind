@@ -24,9 +24,9 @@ export const Navbar = () => {
         </div>
         <ul className="flex flex-col items-center gap-2 mt-5 px-5 text-lg font-medium">
           <a href="#Header" className="px-4 py2 rounded-full inline-block">Home</a>
-          <a href="#Header" className="px-4 py2 rounded-full inline-block">About</a>
-          <a href="#Header" className="px-4 py2 rounded-full inline-block">Project</a>
-          <a href="#Header" className="px-4 py2 rounded-full inline-block">Testimonial</a>
+          <a href="#About" className="px-4 py2 rounded-full inline-block">About</a>
+          <a href="#Project" className="px-4 py2 rounded-full inline-block">Project</a>
+          <a href="#Testimonials" className="px-4 py2 rounded-full inline-block">Testimonials</a>
         </ul>
       </div>
     </div>
